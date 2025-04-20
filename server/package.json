@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
@@ -18,7 +18,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.13.2"
+    "mongoose": "^8.13.2",
+    "openai": "^4.95.1"
   },
   "devDependencies": {
     "jest": "^29.7.0",
