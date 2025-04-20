@@ -11,7 +11,7 @@ const Resources = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/roles'); // Replace with your correct API URL
+        const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/roles`); // Replace with your correct API URL
         setRoles(response.data.roles);
       } catch (err) {
         toast.error("Failed to fetch roles");
@@ -29,7 +29,7 @@ const Resources = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/questions/hr-questions?role=${role.toLowerCase()}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/questions/hr-questions?role=${role.toLowerCase()}`);
       setQuestions(response.data.questions);
     } catch (err) {
       toast.error("Failed to fetch questions");

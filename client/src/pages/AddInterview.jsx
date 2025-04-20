@@ -32,7 +32,7 @@ const AddInterview = () => {
         ...formData,
         interviewRounds: formData.interviewRounds.split(",").map((s) => s.trim()),
       };
-      await axios.post("http://localhost:5000/api/interviews", payload);
+      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/interviews`, payload);
       alert("Interview added successfully!");
     } catch (err) {
       alert("Error adding interview. Check required fields.");

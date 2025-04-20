@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [interviews, setInterviews] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/interviews")
+    axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/interviews`)
       .then((res) => setInterviews(res.data))
       .catch((err) => console.error("Failed to fetch:", err));
   }, []);
