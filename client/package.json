@@ -16,9 +16,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "preinstall": "npx npm-force-resolutions",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,9 +41,12 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
+    "@craco/craco": "^7.1.0",
+    "autoprefixer": "^10.4.20",
+    "npm-force-resolutions": "^0.0.10",
     "tailwindcss": "^4.1.4"
+  },
+  "resolutions": {
+    "tailwindcss": "4.1.4"
   }
 }
