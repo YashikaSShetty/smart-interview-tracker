@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 const Tracker = () => {
-  const [interviews, setInterviews] = useState([
+  const [interviews] = useState([
     { company: 'Company A', date: '2025-04-20', status: 'Pending' },
     { company: 'Company B', date: '2025-04-22', status: 'Completed' },
   ]);

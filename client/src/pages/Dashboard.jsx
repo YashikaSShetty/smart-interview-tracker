@@ -3,7 +3,8 @@ import axios from "axios";
 import InterviewCard from "../components/InterviewCard";
 
 const Dashboard = () => {
-  const [interviews, setInterviews] = useState([]);
+// eslint-disable-next-line no-unused-vars
+const [interviews, setInterviews] = useState([]);
 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/interviews`)
