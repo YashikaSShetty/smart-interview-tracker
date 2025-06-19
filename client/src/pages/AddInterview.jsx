@@ -40,7 +40,7 @@ const AddInterview = () => {
   };
 
   return (
-    <div className="p-6 max-w-xl mx-auto">
+    <div className="p-6 max-w-xl mx-auto card">
       <h2 className="text-2xl font-bold mb-4">Add New Interview</h2>
       <form onSubmit={handleSubmit} className="grid gap-4">
         <input name="company" placeholder="Company*" onChange={handleChange} required className="p-2 border rounded" />

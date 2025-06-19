@@ -64,7 +64,7 @@ const Resources = () => {
         {questions.length > 0 && (
           <ul>
             {questions.map((question, index) => (
-              <li key={index}>{question}</li>
+              <li key={index} className="hr-question">{question}</li>
             ))}
           </ul>
         )}

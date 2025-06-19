@@ -13,11 +13,13 @@ const [interviews, setInterviews] = useState([]);
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="container dashboard-container p-6">
       <h1 className="text-3xl font-bold mb-4">Your Interviews</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="flex flex-wrap gap-6">
         {interviews.map((item) => (
-          <InterviewCard key={item._id} interview={item} />
+          <div key={item._id} className="card w-full md:w-5/12">
+            <InterviewCard interview={item} />
+          </div>
         ))}
       </div>
     </div>
